@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" 
+   >
+    
+<LinearLayout
+    android:id="@+id/highLinear"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+   android:layout_alignParentTop="true"
+    >
+
+    <Button
+        android:id="@+id/highName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/highValue" />
+
+    <TextView 
+        android:id="@+id/highValue"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textSize="60dp"
+        android:layout_weight="1"/>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/lowLinear"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/highLinear"
+    >
+
+    <Button
+        android:id="@+id/lowhName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/lowValue" />
+
+    <TextView 
+        android:id="@+id/lowValue"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textSize="60dp"
+        android:layout_weight="1"/>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/pulseLinear"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/lowLinear"
+    android:layout_alignParentBottom="true">
+
+    <Button
+        android:id="@+id/pulseName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/PulseValue" />
+
+    <TextView 
+        android:id="@+id/pulseValue"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textSize="60dp"
+        android:layout_weight="1"/>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+   <color name="smsTitle_txtcolor">#ff0000</color>
+   <color name="smsCountdown_txtcolor">#ccaa00</color>
+   
+   <dimen name="smsContent_txtsize">20sp</dimen>
+   <dimen name="smsCountdown_txtsize">40sp</dimen>
+   <string name="sms_send_successfully">SMS is Sent Successfully!</string> 
+   
+   
+</resources>

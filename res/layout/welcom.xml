@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/wenjian"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="文件传输模式" />
+
+    <Button
+        android:id="@+id/dongtai"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wenjian"
+        android:layout_alignLeft="@+id/wenjian"
+        android:layout_marginBottom="30dp"
+        android:text="动态监护模式" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/wenjian"
+        android:layout_below="@+id/wenjian"
+        android:layout_marginTop="30dp"
+        android:text="设置选项" />
+
+</RelativeLayout>

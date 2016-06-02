@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/application_back">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+        android:padding="40dp"
+        android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="系统登录" 
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+      
+                <EditText
+                    android:padding="3dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_back"
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:hint="输入用户名："
+                    />
+          
+       
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                  android:padding="3dp"
+                  android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edit_back"
+                    android:text=""
+                    android:hint="输入密码："/>
+          
+       
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+             	android:background="@drawable/login_bt_back"
+                android:text="确    定"
+                    android:textColor="@color/white"
+                />
+
+            <Button
+                 android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:background="@drawable/login_bt_back"
+                android:text="取    消"
+                android:textColor="@color/white"
+               />
+        
+    </LinearLayout>
+
+  <TextView
+        android:id="@+id/login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="没有账号？"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

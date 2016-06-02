@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" android:orientation="vertical">
+    
+   <LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    
+    >
+    <TextView android:id="@+id/fileName"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:textColor="#ffff00"
+    android:layout_weight="1"
+    android:layout_gravity="center_vertical"
+    />
+     <LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:orientation="horizontal"
+    
+    >
+   
+     <TextView android:id="@+id/xlabel"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:text="X: "/>
+    <View 
+    android:id="@+id/xlegend"
+    android:layout_width="20dp"
+    android:layout_height="2dp"
+    android:background="#00ff00"
+    
+    android:layout_gravity="center_vertical"
+    android:layout_marginRight="5dp"
+    />
+    
+     <TextView android:id="@+id/ylabel"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:text="Y: "
+    />
+    
+    <View 
+    android:layout_width="20dp"
+    android:layout_height="2dp"
+    android:background="#0000ff"
+   	android:id="@+id/ylegend"
+    android:layout_gravity="center_vertical"
+    android:layout_marginRight="5dp"
+    />
+    <TextView android:id="@+id/zlabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:layout_gravity="center_vertical"
+    android:text="Z: "
+    
+    />
+    
+    <View android:layout_width="20dp"
+    android:layout_height="2dp"
+    android:background="#ff0000"
+   	android:id="@+id/zlegend"
+    android:layout_gravity="center_vertical"
+    android:layout_marginRight="50dp"
+    />
+    
+    <TextView android:id="@+id/textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:text="Signal: "
+    android:textColor="#9acd32"
+    android:textSize="23sp"
+    android:layout_marginRight="20dp"
+    />
+   <ImageView android:id="@+id/heartImg"
+      android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:src="@drawable/heart1"
+    android:layout_gravity="center_vertical"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    />
+    <TextView android:id="@+id/heartRate11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:textColor="#66ccff"
+    android:textSize="30sp"
+    android:text="80"
+    android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    </LinearLayout>
+   
+    
+    
+    <LinearLayout android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+     <SurfaceView android:id="@+id/sfv"
+   	android:layout_width="fill_parent" 
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    >
+    </SurfaceView>
+    
+    
+   
+    <SurfaceView
+    android:id="@+id/sfv2"
+    android:layout_width="fill_parent" 
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:layout_weight="4"
+    android:layout_alignParentBottom="true" >
+    
+    </SurfaceView>
+    
+    </LinearLayout>
+   
+   
+   
+   
+	
+    
+    
+</LinearLayout>

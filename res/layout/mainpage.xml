@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/application_back"
+     android:padding="16dp"
+    >
+    <LinearLayout 
+        android:id="@+id/showLinear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"    
+    >
+
+    	<TableLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+    	    android:shrinkColumns="1"
+    	    android:stretchColumns="1"
+    	     >
+    
+    <TextView
+        android:text="@string/this_result"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:typeface="serif"
+        android:gravity="center"/>
+<TableRow
+      android:layout_height="20dp"
+        android:layout_weight="0.3" 
+        
+    >
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测量项"
+          android:textColor="@color/black"
+        />
+     <TextView 
+           android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本次测量结果"
+          android:textColor="@color/black"
+        />
+      <TextView 
+            android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正常值"
+          android:textColor="@color/black"
+        />
+</TableRow>
+    <TableRow
+        android:layout_height="50dp"
+        android:layout_weight="1" 
+        >
+
+        <TextView
+                    android:layout_height="match_parent"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:text="高压"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textSize="30sp" />
+        <TextView
+            android:id="@+id/highT"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:gravity="center"/>
+        <TextView 
+            android:text="(小于130mmHg)"
+            android:textColor="@color/red"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+
+        <TextView
+                    android:layout_height="match_parent"
+                    android:background="@drawable/back"
+                    android:gravity="left|center"
+                    android:text="低压"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+        <TextView
+            android:id="@+id/lowL"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:gravity="center"/>
+        <TextView 
+            android:text="(小于85mmHg)"
+            android:textColor="@color/red"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+                    android:layout_height="match_parent"
+                    android:background="@drawable/back"
+                    android:gravity="left|center"
+                    android:text="脉搏"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+        <TextView
+            android:id="@+id/pulseT"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:gravity="center"/>
+        <TextView 
+            android:text="(60~100次/分)"
+            android:textColor="@color/red"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+    </TableRow>
+</TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        >
+        <Button android:id="@+id/text_this"
+            android:layout_width="0dp"
+           
+            android:layout_weight="1"
+             android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/this_result"
+             android:background="@drawable/login_bt_back"
+            android:textColor="@color/white"
+            android:padding="5dp"
+        />
+        <Button android:id="@+id/button_send"
+            android:layout_width="0dp"
+           android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/this_recent_result"
+             android:background="@drawable/login_bt_back"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            
+        />
+        <Button android:id="@+id/button_send_word"
+             android:layout_width="0dp"
+           android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="上传"
+             android:background="@drawable/login_bt_back"
+            android:textColor="@color/white"
+            android:padding="5dp"
+        />
+    </LinearLayout>
+</LinearLayout>

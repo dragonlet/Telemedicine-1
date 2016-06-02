@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <PreferenceCategory android:title="基本设置"> 
+        <CheckBoxPreference android:title="开启蓝牙" android:key="open_blutooth" android:defaultValue="true" />
+        <CheckBoxPreference android:title="开启震动" android:key="open_wifi"  android:defaultValue="true" />    
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="用户设置">	
+        <CheckBoxPreference android:title="保存在本地SD卡" android:key="re_sd"  android:defaultValue="false" />   
+        <CheckBoxPreference android:title="实时上传到服务器" android:key="re_server" android:summary="需要打开WIFI" android:defaultValue="false"/>    
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="辅助功能">     
+        <PreferenceScreen android:title="搜索设备" android:summary="搜索蓝牙设备">
+            <intent android:targetPackage="com.genius.demo" android:targetClass="com.genius.demo.TrafficStatActivity" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+    
+    
+</PreferenceScreen>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_back"
+    android:orientation="horizontal" >
+
+    <ScrollView 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+         android:layout_weight="3"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="血氧仪"
+            android:textSize="30sp" />
+
+        <TableLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+        >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:text="测量项"
+                    
+                    android:textColor="@color/red"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:text="测量值"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/red"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:text="Spo2%"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/lowL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <TableRow
+                 android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:text="@string/PRbpm"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/highT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <TableRow
+                 android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:text="@string/bar"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/pulseT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="30sp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+             android:layout_marginTop="20dp"
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="连接设备" 
+              android:background="@drawable/login_bt_back"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/this_recent_result"
+            android:visibility="gone" 
+              android:background="@drawable/login_bt_back"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            />
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            
+            android:text="上传数据" 
+              android:background="@drawable/login_bt_back"
+            android:textColor="@color/white"
+            android:padding="5dp"
+              android:layout_marginTop="5dp"
+            />
+        <Button
+            android:id="@+id/stop_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:text="停止上传" 
+              android:background="@drawable/login_bt_back"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+</ScrollView>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/green" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutReal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

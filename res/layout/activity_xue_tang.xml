@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:layout_gravity="center_horizontal"
+        android:text="血糖仪"
+        android:textSize="30sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4" 
+        android:layout_gravity="center_horizontal">
+
+         <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="测量项"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="测量值"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+           android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="血糖浓度:"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/xuetang"
+                 android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+           android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="日期："
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/daily"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="时间："
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/conn_device"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:text="连接设备" />
+
+    <Button
+        android:id="@+id/readData"
+        android:layout_width="wrap_content"
+       android:layout_height="0dp"
+            android:layout_weight="1"
+        android:text="查看记录"
+        android:visibility="gone" />
+     <Button
+        android:id="@+id/activity_xue_tang_upload"
+        android:layout_width="wrap_content"
+       android:layout_height="0dp"
+            android:layout_weight="1"
+             android:layout_gravity="center_horizontal"
+        android:text="上传数据"
+        />
+
+</LinearLayout>

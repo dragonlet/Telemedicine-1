@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:orientation="horizontal">
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        >
+   
+    
+     <SurfaceView android:id="@+id/sfv"
+   	android:layout_width="fill_parent" 
+    android:layout_height="0dp"
+    android:layout_weight="7"
+    >
+    </SurfaceView>
+    
+    
+   
+    <SurfaceView
+    android:id="@+id/sfv2"
+    android:layout_width="fill_parent" 
+    android:layout_height="0dp"
+   
+    android:layout_weight="1"
+    android:layout_alignParentBottom="true"
+   
+    >
+    
+    </SurfaceView>
+    
+
+   
+   </LinearLayout>
+   
+ 
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"    
+        >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/normal_tv"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="健康状况:"
+        />
+    <TextView 
+        android:id="@+id/isnormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="25dp"
+        android:text="none"
+        />
+    </LinearLayout>  
+   
+   
+ 
+    
+    <TextView android:id="@+id/textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:text="Signal: "
+    android:textColor="#9acd32"
+    android:textSize="23sp"
+    android:layout_marginRight="20dp"
+    />
+    <LinearLayout android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+  
+    android:orientation="horizontal"
+    
+    >
+   <ImageView android:id="@+id/heartImg"
+      android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:src="@drawable/heart1"
+    android:layout_gravity="center_vertical"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    />
+    <TextView android:id="@+id/heartRate2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:textColor="#66ccff"
+    android:textSize="30sp"
+    android:text="80"
+    android:layout_marginRight="10dp"/>
+  
+     </LinearLayout>
+     <Button 
+         android:id="@+id/serch_device"
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:text="显示本地心电图"
+         />
+     <Button 
+         android:id="@+id/save_device"
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:text="保存心电数据到本地"
+         />
+   
+    <Button 
+         android:id="@+id/upload"
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:text="上传数据"></Button>
+    
+    <Button 
+         android:id="@+id/notupload"
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:text="停止上传"
+         />
+   </LinearLayout>
+    
+    
+   
+	
+    
+    
+</LinearLayout>

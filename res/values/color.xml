@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="red">#FF0000</color><!--红色 -->
+    <color name="ivory">#FFFFF0</color><!--象牙色 -->
+    <color name="lightyellow">#FFFFE0</color><!--亮黄色 -->
+    <color name="yellow">#FFFF00</color><!--黄色 -->
+    <color name="snow">#FFFAFA</color><!--雪白色 -->
+    <color name="floralwhite">#FFFAF0</color><!--花白色 -->
+    <color name="lemonchiffon">#FFFACD</color><!--柠檬绸色 -->
+    <color name="cornsilk">#FFF8DC</color><!--米绸色 -->
+    <color name="seashell">#FFF5EE</color><!--海贝色 -->
+     <color name="text_color">#ffff00</color>
+    <color name="menu_btn_textSize">#dcd9d9</color>
+    <color name="green">#7CFC00</color><!--草绿色 --> 
+    <color name="blue">#1070B7</color><!-- 蓝色 -->
+    <color name="light_blue">#87d0f2</color>
+</resources>
